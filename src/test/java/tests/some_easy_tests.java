@@ -1,6 +1,6 @@
 package tests;
 
-
+import io.qameta.allure.*;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
@@ -11,6 +11,7 @@ public class some_easy_tests {
 
     @Test
     @DisplayName("Позитивный тест")
+    @Description("Проба позитивного теста")
     @Tag("positive")
     void easyPositiveTest() {
         int a = 1;
@@ -19,6 +20,7 @@ public class some_easy_tests {
 
     @Test
     @DisplayName("Негативный тест")
+    @Description("Проба негативного теста")
     @Tag("antipositive")
     void easyNegativeTest() {
         int b = 2;
