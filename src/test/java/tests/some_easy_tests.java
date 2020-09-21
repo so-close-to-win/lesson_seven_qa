@@ -20,4 +20,13 @@ public class some_easy_tests {
         int b = 2;
         assertEquals(b, 1);
     }
+
+    @Test
+    @Tag("Parametrize")
+    void parametrizedStringTest() {
+        String a = "apple";
+        String b = System.getProperty("bbb");
+
+        assertEquals(a, b);
+    }
 }
