@@ -27,5 +27,6 @@ tasks.withType(Test) {
 task easy_tests(type: Test) {
     useJUnitPlatform{
         includeTags 'positive'
+        includeTags 'antipositive'
     }
 }
