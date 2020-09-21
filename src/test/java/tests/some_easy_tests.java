@@ -1,13 +1,16 @@
 package tests;
 
+
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.DisplayName;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class some_easy_tests {
 
     @Test
+    @DisplayName("Позитивный тест")
     @Tag("positive")
     void easyPositiveTest() {
         int a = 1;
@@ -15,6 +18,7 @@ public class some_easy_tests {
     }
 
     @Test
+    @DisplayName("Негативный тест")
     @Tag("antipositive")
     void easyNegativeTest() {
         int b = 2;
